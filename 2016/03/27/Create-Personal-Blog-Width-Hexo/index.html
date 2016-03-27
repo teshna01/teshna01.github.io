@@ -67,7 +67,7 @@ hexo的官方定义是：一个简单、快速、强大的Node.js静态博客框
 <meta property="og:description" content="一直想搭建一个个人博客把自己学习过程中的点点滴滴记录下来。在各种忙碌之后的今天终于有时间搭建一个个人博客了。下面是我使用Hexo搭建博客到部署的过程：
 首先我们应该知道什么是Hexo?
 hexo的官方定义是：一个简单、快速、强大的Node.js静态博客框架。对，hexo是静态博客，因为hexo是靠管理markdown文档来管理文章的，和传统的博客（比如：WordPress）是靠数据库来管理是大相径">
-<meta property="og:updated_time" content="2016-03-27T04:14:12.000Z">
+<meta property="og:updated_time" content="2016-03-27T04:24:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Hexo搭建博客并部署到github">
 <meta name="twitter:description" content="一直想搭建一个个人博客把自己学习过程中的点点滴滴记录下来。在各种忙碌之后的今天终于有时间搭建一个个人博客了。下面是我使用Hexo搭建博客到部署的过程：
@@ -287,7 +287,9 @@ hexo的官方定义是：一个简单、快速、强大的Node.js静态博客框
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
 <p> 最后执行：</p>
  <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo</span> deploy</span><br></pre></td></tr></table></figure>
-<p>一但部署成功后不会立刻生效，最长等待十分钟，在浏览器中输入 <code>username.github.io</code> ，就能查看到你的博客了。<br>更多博客的配置项（即配置<code>_config.yml文件</code>）请查看<a href="https://hexo.io/docs/configuration.html" target="_blank" rel="external">_config.yml</a>, 更多hexo命令行命令请查看<a href="hexo Commands">hexo Commands</a>，<a href="https://hexo.io/" target="_blank" rel="external">hexo</a>官网。</p>
+<p>一但部署成功后不会立刻生效，最长等待十分钟，在浏览器中输入 <code>username.github.io</code> ，就能查看到你的博客了。<br> 之后在本地写完Markdown格式的文章，直接执行下面的命令就能更新到你的博客：</p>
+ <figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">d</span> -<span class="keyword">g</span></span><br></pre></td></tr></table></figure>
+<p>更多博客的配置项（即配置<code>_config.yml文件</code>）请查看<a href="https://hexo.io/docs/configuration.html" target="_blank" rel="external">_config.yml</a>, 更多hexo命令行命令请查看<a href="hexo Commands">hexo Commands</a>，<a href="https://hexo.io/" target="_blank" rel="external">hexo</a>官网。</p>
 
       
     </div>
