@@ -78,7 +78,7 @@ Android Studio用起来很顺手，但是它那个Build速度实在不敢恭维�
 <meta property="og:image" content="http://7xso8z.com2.z0.glb.clouddn.com/%E5%90%AF%E5%8A%A8%E5%9B%BE%E6%A0%87180.png">
 <meta property="og:image" content="http://7xso8z.com2.z0.glb.clouddn.com/20150523132020239.png">
 <meta property="og:image" content="http://7xso8z.com2.z0.glb.clouddn.com/20150523132020239.png">
-<meta property="og:updated_time" content="2016-04-06T08:00:28.000Z">
+<meta property="og:updated_time" content="2016-04-06T08:01:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Gradle Build速度加快最佳方法">
 <meta name="twitter:description" content="问题
@@ -273,7 +273,7 @@ Android Studio用起来很顺手，但是它那个Build速度实在不敢恭维�
 </ul>
 <h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p> 在google和度娘了几把（….）之后，大体找到了一下几种加速方案<br> <a id="more"></a></p>
 <h4 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h4><p> AndroidStudio: Setting–&gt;搜索gradle–&gt;Build Tools下的Gradle选项，右侧Gradle VM options–&gt;改参数-Xmx2048m -XX:MaxPermSize=512m</p>
-<p>####方法二<br> 还一种就是在gradle.properites里加两行<br> org.gradle.parallel=true<br> org.gradle.daemon=true</p>
+<h4 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h4><p> 还一种就是在gradle.properites里加两行<br> org.gradle.parallel=true<br> org.gradle.daemon=true</p>
 <h4 id="方法三"><a href="#方法三" class="headerlink" title="方法三"></a>方法三</h4><p>以上方法虽然能提升一些速度，但也不是很明显，还是满足不了我们的欲望。反正build的速度还在3分钟上下，这是完全不能接受的。<br>以上方法即然满足不了，那怎么以闪电般的速度Build呢，设置离线编译就OK了，像这样:<br><img src="http://7xso8z.com2.z0.glb.clouddn.com/%E5%90%AF%E5%8A%A8%E5%9B%BE%E6%A0%87180.png" alt="image"><br>设置之前的速度<br><img src="http://7xso8z.com2.z0.glb.clouddn.com/20150523132020239.png" alt="image"><br>设置之后的速度<br><img src="http://7xso8z.com2.z0.glb.clouddn.com/20150523132020239.png" alt="image"></p>
 <p>Enjoy it!</p>
 
@@ -417,7 +417,7 @@ Android Studio用起来很顺手，但是它那个Build速度实在不敢恭维�
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决方法"><span class="nav-number">2.</span> <span class="nav-text">解决方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#方法一"><span class="nav-number">2.1.</span> <span class="nav-text">方法一</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方法三"><span class="nav-number">2.2.</span> <span class="nav-text">方法三</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决方法"><span class="nav-number">2.</span> <span class="nav-text">解决方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#方法一"><span class="nav-number">2.1.</span> <span class="nav-text">方法一</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方法二"><span class="nav-number">2.2.</span> <span class="nav-text">方法二</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方法三"><span class="nav-number">2.3.</span> <span class="nav-text">方法三</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
